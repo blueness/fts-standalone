@@ -23,3 +23,7 @@ libfts_la_LDFLAGS = \
 
 include_HEADERS = \
         fts.h
+
+EXTRA_DIST = \
+	LICENSE \
+	README.md
