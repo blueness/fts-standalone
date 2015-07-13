@@ -50,6 +50,8 @@
 #define ALIGN(p)        (((unsigned long int) (p) + ALIGNBYTES) & ~ALIGNBYTES)
 #endif
 
+#define _D_EXACT_NAMLEN(d) (strlen ((d)->d_name))
+
 typedef unsigned short u_short;
 
 static FTSENT	*fts_alloc(FTS *, char *, size_t);
