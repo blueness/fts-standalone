@@ -14,7 +14,7 @@ libfts_la_SOURCES =\
 
 libfts_la_CFLAGS = \
         $(AM_CFLAGS) \
-        -fvisibility=hidden
+        -fvisibility=default
 
 libfts_la_LDFLAGS = \
         $(AM_LDFLAGS) \
