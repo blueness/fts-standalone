@@ -1,4 +1,5 @@
 .deps/
+.libs/
 Makefile
 Makefile.in
 aclocal.m4
@@ -12,6 +13,9 @@ configure
 depcomp
 fts-*.tar.gz
 install-sh
+libfts.la
+libfts_la-fts.lo
+libfts_la-fts.o
 libtool
 ltmain.sh
 m4/
