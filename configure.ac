@@ -1,4 +1,4 @@
-AC_PREREQ([2.65])
+AC_PREREQ([2.68])
 AC_INIT([fts], [0.2], [http://bug.gentoo.org])
 AC_CONFIG_SRCDIR([fts.c])
 
