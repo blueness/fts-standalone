@@ -17,3 +17,6 @@ This code was adopted from OpenBSD 5.7 and modified slightly to build
 in Linux.  
 
 Maintainer: Anthony G. Basile <blueness@gentoo.org>
+
+## Repoman status
+[![Repoman Status](https://travis-ci.org/blueness/fts-standalone.png)](https://travis-ci.org/blueness/fts-standalone)
