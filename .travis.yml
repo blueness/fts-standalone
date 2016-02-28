@@ -6,7 +6,6 @@ before_install:
  - sudo apt-get update -qq
  - sudo apt-get install autotools-dev automake autoconf libtool
 script:
- - mkdir m4
  - ./autogen.sh
  - ./configure
  - make V=1 distcheck
