@@ -1,9 +1,9 @@
-AC_PREREQ([2.69])
+AC_PREREQ([2.65])
 AC_INIT([fts], [0.2], [http://bug.gentoo.org])
 AC_CONFIG_SRCDIR([fts.c])
 AC_CONFIG_MACRO_DIRS([m4])
 
-AM_INIT_AUTOMAKE([foreign 1.13])
+AM_INIT_AUTOMAKE([foreign 1.11])
 AM_SILENT_RULES([yes])
 LT_PREREQ(2.2)
 LT_INIT
