@@ -19,4 +19,4 @@ in Linux.
 Maintainer: Anthony G. Basile <blueness@gentoo.org>
 
 ## Build Status
-[![Repoman Status](https://travis-ci.org/blueness/fts-standalone.png)](https://travis-ci.org/blueness/fts-standalone)
+[![Status](https://travis-ci.org/blueness/fts-standalone.png)](https://travis-ci.org/blueness/fts-standalone)
