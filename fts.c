@@ -97,7 +97,7 @@ fts_open(char * const *argv, int options,
 	/* Allocate/initialize the stream */
 	if ((sp = calloc(1, sizeof(FTS))) == NULL)
 		return (NULL);
-	sp->fts_compar = compar;
+	sp->fts_compar = (int (*)(void))compar;
 	sp->fts_options = options;
 
 	/* Logical walks turn on NOCHDIR; symbolic links are too hard. */
@@ -895,7 +895,8 @@ fts_sort(FTS *sp, FTSENT *head, int nitems)
 	}
 	for (ap = sp->fts_array, p = head; p; p = p->fts_link)
 		*ap++ = p;
-	qsort((void *)sp->fts_array, nitems, sizeof(FTSENT *), sp->fts_compar);
+	qsort((void *)sp->fts_array, nitems, sizeof(FTSENT *), (int (*)(const void *, const void *))sp->fts_compar);
+
 	for (head = *(ap = sp->fts_array); --nitems; ++ap)
 		ap[0]->fts_link = ap[1];
 	ap[0]->fts_link = NULL;
